@@ -13,7 +13,7 @@ class Main extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
+        <div className="navigation">
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>

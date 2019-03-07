@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 
+.navigation{
+  background-color: rgba(0, 0, 0, 0.144);
+  height: 106px;
+}
 body {
   background-color: rgb(109, 177, 241);
-  margin: -15px;
+  margin: -16px;
 }
 h1, h2, p, ul, li {
   font-family: 'Bungee Hairline';
@@ -10,11 +14,8 @@ h1, h2, p, ul, li {
 ul.header li {
   display: inline;
   list-style-type: none;
-  margin: 0;
 }
 ul.header {
-  background-color: rgba(0, 0, 0, 0.144);
-  padding: 0;
   position: fixed;
   right: 0;
 }
@@ -41,9 +42,12 @@ ul.header li a {
 }
 .content p {
   font-weight: bold;
-  padding: 0;
-  margin: 0;
 }
 .active {
   background-color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 510px ) {
+  ul.header li {
+    display: none;
+  }
 }

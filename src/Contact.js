@@ -6,9 +6,10 @@ class Contact extends Component {
       <div>
         <h2>CONTACT</h2>
         <p>Send me a message @</p>
-        <a href="https://github.com/githubxiaoz">
-        <img src={window.location.origin + '/img/github.svg'} alt="GitHub" height="30" width="30"/>
+        <a href={"mailto:48108389+GitHubXiaoz@users.noreply.github.com"}>
+        <img src={window.location.origin + '/img/mail.svg'} alt="Mail" height="30" width="30"/>
         </a>
+
       </div>
     );
   }
