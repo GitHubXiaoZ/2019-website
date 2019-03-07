@@ -2,11 +2,10 @@
 
 .navigation{
   background-color: rgba(0, 0, 0, 0.144);
-  height: 106px;
+  height: 90px;
 }
 body {
   background-color: rgb(109, 177, 241);
-  margin: -16px;
 }
 h1, h2, p, ul, li {
   font-family: 'Bungee Hairline';
@@ -18,6 +17,7 @@ ul.header li {
 ul.header {
   position: fixed;
   right: 0;
+  margin: 0;
 }
 ul.header li a {
   color: #FFF;
