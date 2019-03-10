@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 
-.navigation{
+.navigation {
   background-color: rgba(0, 0, 0, 0.144);
   height: 90px;
 }
@@ -26,6 +26,11 @@ ul.header li a {
   display: inline-block;
   padding: 25px;
 }
+ul.header li a:hover {
+  animation-name: expand;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
 .content {
   text-align: center;
   position: absolute;
@@ -45,6 +50,21 @@ ul.header li a {
 }
 .active {
   background-color: rgb(0, 0, 0);
+}
+img:hover {
+  animation-name: expand;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+    opacity: 0.25;
+  }
 }
 @media screen and (max-width: 510px ) {
   ul.header li {

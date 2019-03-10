@@ -5,6 +5,7 @@ class Home extends Component {
     return (
       <div>
         <h2>WELCOME!</h2>
+        <p>o(〃＾▽＾〃)o</p>
         <p>Find me @</p>
         <a href="https://github.com/githubxiaoz">
         <img src={window.location.origin + '/img/github.svg'} alt="GitHub" height="30" width="30"/>
