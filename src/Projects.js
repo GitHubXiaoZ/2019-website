@@ -6,7 +6,7 @@ class Projects extends Component {
       <div>
         <h2>PROJECTS</h2>
         <p>WIP.</p>
-
+        <p>(*´￫ܫ￩｀*)</p>
       </div>
     );
   }

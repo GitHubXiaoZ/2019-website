@@ -7,14 +7,17 @@ class About extends Component {
         <h2>ABOUT</h2>
         <p>I am a designer and developer.</p>
         <p>My Skillset: </p>
-        <ul class="skills">
-          <il>HTML</il>
-          <il>CSS</il>
-          <il>Javascript</il>
-          <il>Python</il>
-          <il>C#</il>
-          <il>Java</il>
-        </ul>
+        <div>
+          <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>ReactJS</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C#</li>
+          </ul>
+        </div>
       </div>
     );
   }
