@@ -1,6 +1,14 @@
 import React, { Component } from "react";
- 
+
 class About extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+        percentage: 50
+    }
+  }
+
   render() {
     return (
       <div>
@@ -9,7 +17,8 @@ class About extends Component {
         <p>My Skillset: </p>
         <div>
           <ul class="skills">
-          <li>HTML</li>
+          <li>HTML</li> 
+          <ExperienceBar percentage = {this.state.percentage} />
           <li>CSS</li>
           <li>Javascript</li>
           <li>ReactJS</li>
@@ -21,6 +30,19 @@ class About extends Component {
       </div>
     );
   }
+}
+
+function ExperienceBar(props) {
+    return (
+        <div className="experience-bar">
+        <Progress percentage = {props.percentage} />
+        </div>
+
+    )
+}
+
+function Progress(props) {
+return <div className="progress" style={{ width: `${props.percentage}%`}} />
 }
  
 export default About;
