@@ -2,13 +2,7 @@
 
 body {
   background-color: rgb(109, 177, 241);
-}
-h1, h2, p, ul, li {
   font-family: 'Bungee Hairline';
-}
-ul.header li {
-  display: inline;
-  list-style-type: none;
 }
 ul.header {
   background-color: rgba(0, 0, 0, 0.144);
@@ -19,6 +13,10 @@ ul.header {
   right: 0;
   width: 100%;
   height: 90px;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
 }
 ul.header li a {
   color: #FFF;
@@ -31,6 +29,29 @@ ul.header li a:hover {
   animation-name: expand;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+}
+.buttonMenu {
+  font-weight:bold;
+  color:white;
+  position: fixed;
+  text-align: left;
+  padding: 25px;
+  top: 0;
+  left: 0;
+}
+.buttonMenu:hover {
+  animation-name: expand;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+ul.menu {
+  color: white;
+}
+ul.menu li{
+  background-color: rgba(0, 0, 0, 0.144);
+  list-style-type: none;
+  font-weight: bold;
+  color: white;
 }
 .content {
   text-align: center;
@@ -89,7 +110,7 @@ img:hover {
     opacity: 0.25;
   }
 }
-@media screen and (max-width: 470px ) {
+@media screen and (max-width: 520px ) {
   ul.header li {
     display: none;
   }
