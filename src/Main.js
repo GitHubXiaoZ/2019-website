@@ -33,9 +33,7 @@ class Main extends Component {
       this.setState({ displayMenu: false }, () => {
         document.removeEventListener("click", this.hideMenu)
       })
-  
   }
-
   render() {
     return (
       <HashRouter>
@@ -47,7 +45,12 @@ class Main extends Component {
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
-          <span className="buttonMenu" onClick = {this.displayMenu}>Menu</span>
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/projects" component={Projects}/>
+            <Route path="/contact" component={Contact}/>
+          </div>
+          <div className="buttonMenu" onClick = {this.displayMenu}>Menu</div>
               {
                   this.state.displayMenu ? (
                     <ul className="menu">
@@ -58,14 +61,8 @@ class Main extends Component {
                     </ul>
                   ) : (null)
               }
-            <Route exact path="/" component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/projects" component={Projects}/>
-            <Route path="/contact" component={Contact}/>
-          </div>
         </div>
        </HashRouter>  
-       
     )
   }
 }
