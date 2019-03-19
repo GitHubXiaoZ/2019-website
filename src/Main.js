@@ -8,6 +8,7 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import BurgerIcon from "./BurgerIcon";
 
 class Main extends Component {
   constructor() {
@@ -49,6 +50,9 @@ class Main extends Component {
             <Route path="/about" component={About}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/contact" component={Contact}/>
+          </div>
+          <div>
+            <BurgerIcon open = {true} />
           </div>
           <div className="buttonMenu" onClick = {this.displayMenu}>Menu</div>
               {
