@@ -35,41 +35,26 @@ ul.header li a:hover {
   display: inline-block;
   cursor: pointer;
   position: fixed;
-  right: 20px;
-  bottom: 40px;
-  z-index: 1;
-  background: #fff;
+  left: 20px;
+  top: 20px;
   padding: 10px;
   border-radius: 25px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px #00000030;
 }
 .burger-menu .topBar,
 .midBar,
 .botBar {
   width: 25px;
   height: 3px;
-  background-color: #333;
-  margin: 4px 0;
-}
-.buttonMenu {
-  font-weight:bold;
-  color:white;
-  position: fixed;
-  text-align: left;
-  cursor: pointer;
-  padding: 25px;
-  top: 0;
-  left: 0;
-}
-.buttonMenu:hover {
-  animation-name: expand;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  background-color: rgba(255, 255, 255, 0.808);
+  border-radius: 25px;
+  margin: 3.5px;
+  padding: 0.5px;
 }
 ul.menu {
   background-color: rgba(0, 0, 0, 0.144);
   box-shadow: 0 4px 8px #00000030;
-  position: absolute;
+  position: fixed;
   padding: 10px;
   left: 90px;
 }
@@ -84,6 +69,9 @@ ul.menu li a {
   text-decoration: none;
   display: inline-block;
   padding: 5px;
+}
+ul.menu li a:hover {
+  background: #00000030;
 }
 .content {
   text-align: center;
@@ -147,3 +135,11 @@ img:hover {
     display: none;
   }
 }
+/*
+@media screen and (min-width: 520px ){
+  .burger-menu,
+  .burger-menu.open{
+    display: none;
+  }
+}
+*/

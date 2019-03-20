@@ -51,10 +51,7 @@ class Main extends Component {
             <Route path="/projects" component={Projects}/>
             <Route path="/contact" component={Contact}/>
           </div>
-          <div>
-            <BurgerIcon open = {true} />
-          </div>
-          <div className="buttonMenu" onClick = {this.displayMenu}>Menu</div>
+          <div> <BurgerIcon onClick = {this.displayMenu}/> </div>
               {
                   this.state.displayMenu ? (
                     <ul className="menu">
