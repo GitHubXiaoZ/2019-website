@@ -73,6 +73,11 @@ ul.menu li a {
 ul.menu li a:hover {
   background: #00000030;
 }
+.license {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
 .content {
   text-align: center;
   position: absolute;

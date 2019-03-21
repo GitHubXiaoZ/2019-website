@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {
   Route,
+  Switch,
   NavLink,
   HashRouter
 } from "react-router-dom";
@@ -8,6 +9,7 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Error_404 from "./Error_404";
 import BurgerIcon from "./BurgerIcon";
 
 class Main extends Component {
@@ -46,10 +48,16 @@ class Main extends Component {
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
+          <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/contact" component={Contact}/>
+            <Route path="*" component={Error_404}/>
+          </Switch>
+          </div>
+          <div className="license">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br />
           </div>
           <div> <BurgerIcon onClick = {this.displayMenu}/> </div>
               {
