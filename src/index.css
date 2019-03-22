@@ -3,6 +3,7 @@
 body {
   background-color: rgb(109, 177, 241);
   font-family: 'Bungee Hairline';
+  animation: fadein 1s;
 }
 ul.header {
   background-color: rgba(0, 0, 0, 0.144);
@@ -135,8 +136,19 @@ img:hover {
     opacity: 0.25;
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 520px ) {
   ul.header li {
+    display: none;
+  }
+  .license {
     display: none;
   }
 }
