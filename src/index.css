@@ -42,6 +42,9 @@ ul.header li a:hover {
   border-radius: 25px;
   box-shadow: 0 1px 4px #00000030;
 }
+.burger-menu:hover {
+  background: rgba(0, 0, 0, 0.801);
+}
 .burger-menu .topBar,
 .midBar,
 .botBar {
@@ -78,6 +81,9 @@ ul.menu li a:hover {
   position: fixed;
   bottom: 0;
   right: 0;
+}
+.license img:hover {
+  animation-name: none;
 }
 .content {
   text-align: center;
