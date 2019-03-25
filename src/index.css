@@ -77,13 +77,14 @@ ul.menu li a {
 ul.menu li a:hover {
   background: #00000030;
 }
-.license {
+.logo {
+  top: 0px;
+  left: 0px;
+  font-weight: bold;
   position: fixed;
-  bottom: 0;
-  right: 0;
-}
-.license img:hover {
-  animation-name: none;
+  margin: auto;
+  color: #FFF;
+  padding: 25px;
 }
 .content {
   text-align: center;
@@ -132,6 +133,14 @@ img:hover {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+.license {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.license img:hover {
+  animation-name: none;
+}
 @keyframes expand {
   0% {
     transform: scale(1, 1);
@@ -150,19 +159,17 @@ img:hover {
     opacity: 1;
   }
 }
-@media screen and (max-width: 520px ) {
+@media screen and (max-width: 640px ) {
   ul.header li {
     display: none;
   }
-  .license {
-    display: none;
+  .logo {
+    left: 35%;
   }
 }
-/*
-@media screen and (min-width: 520px ){
+@media screen and (min-width: 640px ) {
   .burger-menu,
-  .burger-menu.open{
+  .burger-menu.open {
     display: none;
   }
 }
-*/
