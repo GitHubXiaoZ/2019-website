@@ -56,7 +56,9 @@ class Main extends Component {
             <Route path="*" component={Error_404}/>
           </Switch>
           </div>
-          <div className="logo">X | Developer</div>
+          <div className="logo">
+          <img src={window.location.origin + '/img/sample_logo.svg'} alt="sample_logo" height="75" width="75"/>
+          </div>
           <div className="license">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br />
           </div>

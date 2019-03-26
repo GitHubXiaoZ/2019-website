@@ -80,11 +80,9 @@ ul.menu li a:hover {
 .logo {
   top: 0px;
   left: 0px;
-  font-weight: bold;
   position: fixed;
   margin: auto;
-  color: #FFF;
-  padding: 25px;
+  padding: 10px;
 }
 .content {
   text-align: center;
@@ -138,7 +136,8 @@ img:hover {
   bottom: 0;
   right: 0;
 }
-.license img:hover {
+.license img:hover,
+.logo img:hover {
   animation-name: none;
 }
 @keyframes expand {
@@ -164,7 +163,7 @@ img:hover {
     display: none;
   }
   .logo {
-    left: 35%;
+    left: 40%;
   }
 }
 @media screen and (min-width: 640px ) {
