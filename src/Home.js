@@ -1,6 +1,13 @@
+//imports
 import React, { Component } from "react";
- 
+
+/*
+class: Home
+@no params
+welcome page- includes link to social medias
+ */
 class Home extends Component {
+  //renders welcome page
   render() {
     return (
       <div className="home">
@@ -15,5 +22,6 @@ class Home extends Component {
     );
   }
 }
- 
+
+//exports welcome page
 export default Home;

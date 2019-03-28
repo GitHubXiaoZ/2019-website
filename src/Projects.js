@@ -1,6 +1,13 @@
+//imports
 import React, { Component } from "react";
  
+/*
+class: Projects
+@no params
+displays current and ongoing projects - needs to be updated
+*/
 class Projects extends Component {
+  //renders project page
   render() {
     return (
       <div>
@@ -11,5 +18,5 @@ class Projects extends Component {
     );
   }
 }
- 
+//exports projects page
 export default Projects;

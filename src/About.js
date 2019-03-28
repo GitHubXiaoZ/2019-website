@@ -1,6 +1,13 @@
+//import
 import React, { Component } from "react";
 
+/*
+class: About
+@no params
+displays skillset and other information about me
+*/
 class About extends Component {
+  //render about page
   render() {
     return (
       <div className="about">
@@ -36,6 +43,7 @@ class About extends Component {
   }
 }
 
+//languages and frameworks within my skillset
 const skillset = {
   HTML: 45,
   CSS: 50,
@@ -44,15 +52,18 @@ const skillset = {
   Python: 75,
   Java: 25,
   CSharp: 30,
+  //changes color base on proficiency
+  //the more intense the chroma, the higher the proficiency
   color: function(value) {
     return (value <= 30) ? "default" : (value <= 50) ? "#5ee1ff" : "#00d0ff"
   },
+  //describes my proficiency with the skill
   level: function(value) {
     return (value <= 30) ? "rusty" : (value <= 50) ? "novice" : "intermediate"
   }
 }
 
-
+//generates the skill bars
 function ExperienceBar(props) {
     return (
         <div className="experience-bar">
@@ -62,10 +73,12 @@ function ExperienceBar(props) {
     )
 }
 
+//fills in the bars
 function Progress(props) {
     return (
         <div className="progress" style={{ width: `${props.percentage}%`, backgroundColor: `${props.color}`}} />
     )
 }
 
+//export about page
 export default About;

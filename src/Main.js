@@ -1,3 +1,4 @@
+//imports
 import React, { Component } from "react";
 import {
   Route,
@@ -12,10 +13,17 @@ import Contact from "./Contact";
 import Error_404 from "./Error_404";
 import BurgerIcon from "./BurgerIcon";
 
+/*
+class: Main
+@No params
+SPA
+links to other page components via HashRouter
+*/
 class Main extends Component {
+  //constructor
   constructor() {
     super()
-
+    //default state
     this.state = {
       displayMenu: false
     }
@@ -23,7 +31,7 @@ class Main extends Component {
     this.displayMenu = this.displayMenu.bind(this)
     this.hideMenu = this.hideMenu.bind(this)
   }
-  
+  //opens interface when clicked
   displayMenu(event) {
     event.preventDefault()
 
@@ -31,12 +39,13 @@ class Main extends Component {
       document.addEventListener("click", this.hideMenu)
       })
     }
-  
-    hideMenu() {
-      this.setState({ displayMenu: false }, () => {
-        document.removeEventListener("click", this.hideMenu)
+    //closes interface
+  hideMenu() {
+    this.setState({ displayMenu: false }, () => {
+      document.removeEventListener("click", this.hideMenu)
       })
   }
+  //render main page
   render() {
     return (
       <HashRouter>
@@ -78,5 +87,5 @@ class Main extends Component {
     )
   }
 }
- 
+//export main page
 export default Main;

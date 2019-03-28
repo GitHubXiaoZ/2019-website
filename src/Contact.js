@@ -1,6 +1,13 @@
+//import
 import React, { Component } from "react";
- 
+
+/*
+class: Contact
+@no params
+displays ways to contact me- through email
+*/
 class Contact extends Component {
+  //renders contact page
   render() {
     return (
       <div>
@@ -14,5 +21,6 @@ class Contact extends Component {
     );
   }
 }
- 
+
+//exports contact page
 export default Contact;
