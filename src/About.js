@@ -1,10 +1,9 @@
 //import
 import React, { Component } from "react";
 
-/*
-class: About
-@no params
-displays skillset and other information about me
+/* class: About
+ * @no params
+ * displays skillset and other information about me
 */
 class About extends Component {
   //render about page
@@ -43,7 +42,7 @@ class About extends Component {
   }
 }
 
-//languages and frameworks within my skillset
+//languages and frameworks 
 const skillset = {
   HTML: 45,
   CSS: 50,
