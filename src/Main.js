@@ -13,11 +13,10 @@ import Contact from "./Contact";
 import Error_404 from "./Error_404";
 import BurgerIcon from "./BurgerIcon";
 
-/*
-class: Main
-@No params
-SPA
-links to other page components via HashRouter
+/* class: Main
+ * @No params
+ * SPA
+ * links to other page components via HashRouter
 */
 class Main extends Component {
   //constructor
