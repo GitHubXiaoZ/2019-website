@@ -1,10 +1,9 @@
 //import
 import React, { Component } from "react";
 
-/*
-class: Error_404
-@no params
-404 page
+/* class: Error_404
+ * @no params
+ * 404 page
  */
 class Error_404 extends Component {
     //renders 404 page
