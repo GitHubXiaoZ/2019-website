@@ -1,10 +1,9 @@
 //imports
 import React, { Component } from "react";
 
-/*
-class: Home
-@no params
-welcome page- includes link to social medias
+/* class: Home
+ * @no params
+ * welcome page- includes link to social medias
  */
 class Home extends Component {
   //renders welcome page
