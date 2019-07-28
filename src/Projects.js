@@ -1,10 +1,9 @@
 //imports
 import React, { Component } from "react";
  
-/*
-class: Projects
-@no params
-displays current and ongoing projects - needs to be updated
+/* class: Projects
+ * @no params
+ * displays current and ongoing projects - needs to be updated
 */
 class Projects extends Component {
   //renders project page
